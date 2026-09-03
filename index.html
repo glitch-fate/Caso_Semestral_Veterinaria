@@ -7,16 +7,18 @@
     
     <title>Document</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100"> <!-- le añadimos clases para que quede bien el responsive-->
+  <!-- añadi el main para que funcione bien el flex-grow  hace que el main se estire y que nada que este fuera del main se sobre ponga-->
+  <main class="flex-grow-1">
     <!--topbar de boostrap-->
-<div class="bg-dark text-white py-2 border-bottom border-secondary">
+<div class="bg-dark text-white py-2 border-bottom border-secondary"> <!-- el negro usado por boostrap es #212529 -->
   <div class="container-fluid px-4">
     <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3">
       
       <!--logo izquierda-->
       <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
 
-        <img src="images/index/peepo_logo" alt="Logo San Marcos" height="32" class="me-2"> <!-- recordar cambiar la foto despues -->
+        <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" alt="Logo San Marcos" height="32" class="me-2"> <!-- recordar cambiar la foto despues -->
 
         <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos </span>
       </a>
@@ -36,14 +38,14 @@
     <!-- navbar de boostrap-->
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Inicio</a>
+    <a class="navbar-brand" href="index.html">Inicio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Servicios</a>
@@ -121,13 +123,13 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 
+  </main>
+
 </div>
     <!--footer-->
-    <div>
-        <footer class="text-white text-center p-3 mt-4" style="background-color: #000000;">
-    <p>textoguapoparacambiar</p> <!-- recordar cambiar texto-->
-</footer>
-
+    <footer class="text-white text-center p-3 mt-auto" style="background-color: #000000;">
+    <p class="mb-0">&copy; 2026 Veterinaria San Marcos. Todos los derechos reservados.</p>
+  </footer>
 
     </div>
 
