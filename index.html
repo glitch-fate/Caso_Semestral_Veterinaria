@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!--topbar de boostrap-->
+<div class="bg-dark text-white py-2 border-bottom border-secondary">
+  <div class="container-fluid px-4">
+    <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3">
+      
+      <!--logo izquierda-->
+      <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+
+        <img src="images/index/peepo_logo" alt="Logo San Marcos" height="32" class="me-2"> <!-- recordar cambiar la foto despues -->
+
+        <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos </span>
+      </a>
+
+      <!--informacion a la derecha-->
+      <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 fs-6 text-light"> <!-- flex-wrap ayuda con el responsive-->
+        <span><strong>Recepción:</strong> +56 2 2999 1234</span>
+        <span class="text-muted d-none d-sm-inline">|</span>
+        <span><strong>Ubicación:</strong> Rancagua, O'Higgins.</span>
+        <span class="text-muted d-none d-sm-inline">|</span>
+        <span><strong>Urgencias:</strong> +56 9 8765 4321</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!-- navbar de boostrap-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Novedades</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reservas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</nav>
+
+    <!-- carruseliño-->
+<div id="carruselPrincipal" class="carousel slide shadow-sm" data-bs-ride="carousel">
+  
+  <!-- indicadores inferiores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- slides -->
+  <div class="carousel-inner">
+    
+    <!-- slide 1 -->
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1200&q=80" 
+           class="d-block w-100 object-fit-cover" style="aspect-ratio: 21 / 9; object-fit: cover; object-position: center;" alt="Cuidado Profesional">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+        <h2 class="fw-bold">Atención Integral para tu Mascota</h2>
+        <p>Contamos con profesionales altamente capacitados e instalaciones de primer nivel.</p>
+        <a href="servicios.html" class="btn btn-primary btn-sm fw-bold">Ver Servicios</a>
+      </div>
+    </div>
+
+    <!-- slide 2 -->
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=1200&q=80" 
+           class="d-block w-100 object-fit-cover" style="aspect-ratio: 21 / 9; object-fit: cover; object-position: center;" alt="Vacunación y Consultas">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+        <h2 class="fw-bold">Planes de Vacunación y Control</h2>
+        <p>Mantén al día el historial de salud y desparasitación de tus perros y gatos.</p>
+        <a href="contacto.html" class="btn btn-success btn-sm fw-bold">Consultar Horarios</a>
+      </div>
+    </div>
+
+    <!-- slide 3 -->
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://mx.virbac.com/files/live/sites/virbac-mx/files/mexico%20correctas/imagenes%20de%20acoma%C3%B1amiento/Es_necesario_vacunar_perros_y_gatos_1.png" 
+           class="d-block w-100 object-fit-cover" style="aspect-ratio: 21 / 9; object-fit: cover; object-position: center;" alt="Urgencias Veterinarias">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+        <h2 class="fw-bold">Atención de Urgencias</h2>
+        <p>Tu tranquilidad y la salud de tu compañero son nuestra máxima prioridad.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- flechitas para cambiar foto en carru carrusel-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+    <!--footer-->
+    <div>
+        <footer class="text-white text-center p-3 mt-4" style="background-color: #000000;">
+    <p>textoguapoparacambiar</p> <!-- recordar cambiar texto-->
+</footer>
+
+
+    </div>
+
+    <!--boostrap link-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
