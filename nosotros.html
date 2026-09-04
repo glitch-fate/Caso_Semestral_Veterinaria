@@ -1,91 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Nosotros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="style_nos.css">
+  <title>Nosotros - Veterinaria San Marcos</title>
 </head>
-<body>
-    <body class="d-flex flex-column min-vh-100"> <!-- le añadimos clases para que quede bien el responsive-->
-  <!-- añadi el main para que funcione bien el flex-grow  hace que el main se estire y que nada que este fuera del main se sobre ponga-->
+
+<body class="d-flex flex-column min-vh-100">
+  
   <main class="flex-grow-1">
-    <!--topbar de boostrap-->
-<div class="bg-dark text-white py-2 border-bottom border-secondary">
-  <div class="container-fluid px-4">
-    <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3">
-      
-      <!--logo izquierda-->
-      <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+    
+    <!-- topbar-->
+    <div class="bg-dark text-white py-2 border-bottom border-secondary">
+      <div class="container-fluid px-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 gap-md-3">
+          
+          <!-- logo e identidad -->
+          <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+            <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" alt="Logo San Marcos" height="32" class="me-2">
+            <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos</span>
+          </a>
 
-        <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" alt="Logo San Marcos" height="32" class="me-2"> <!-- recordar cambiar la foto despues -->
+          <!-- infor de contacto-->
+          <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 fs-6 text-light">
+            <span><strong>Urgencias:</strong> +56 9 8765 4321</span>
+            <span class="text-muted d-none d-sm-inline">|</span>
+            <span><strong>Ubicación:</strong> Rancagua, O'Higgins.</span>
+          </div>
 
-        <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos </span>
-      </a>
-
-      <!--informacion a la derecha-->
-      <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 fs-6 text-light"> <!-- flex-wrap ayuda con el responsive-->
-        <span><strong>Recepción:</strong> +56 2 2999 1234</span>
-        <span class="text-muted d-none d-sm-inline">|</span>
-        <span><strong>Ubicación:</strong> Rancagua, O'Higgins.</span>
-        <span class="text-muted d-none d-sm-inline">|</span>
-        <span><strong>Urgencias:</strong> +56 9 8765 4321</span>
+        </div>
       </div>
-
     </div>
-  </div>
-</div>
-    <!-- navbar de boostrap-->
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Novedades</a>
-        </li>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reservas</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-</nav>
+    <!-- navbar de boostrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">Inicio</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!--Texto?-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="novedades.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservas.html">Reservas</a>
+            </li>
+          </ul>
 
+         
+          
+        </div>
+      </div>
+    </nav>
 
+    <!-- seccion de nosotros -->
+    <section class="container my-5">
+      
+      <!-- encabezado -->
+      <header class="encabezado-nosotros text-center mb-5">
+        <h1 class="titulo-principal">Sobre Veterinaria San Marcos</h1>
+        <p class="subtitulo-nosotros">Cuidado, compromiso y salud integral para tus mascotas desde 2009.</p>
+      </header>
 
+      <!-- historia-->
+      <article class="bloque-historia mb-5">
+        <h2 class="titulo-seccion">Nuestra Historia</h2>
+        <p class="texto-parrafo">
+          <strong>Veterinaria San Marcos</strong> fue fundada en el año <strong>2009</strong> en la ciudad de <strong>Rancagua, Región del Libertador General Bernardo O'Higgins</strong>. Nacimos con el propósito fundamental de ofrecer una atención médica veterinaria cercana, ética y de alta calidad para acompañar a las familias de la zona en el cuidado de sus mascotas.
+        </p>
+        <p class="texto-parrafo">
+          Con más de una década de trayectoria, nos hemos consolidado como un centro veterinario de confianza gracias a nuestro compromiso con el bienestar animal y la costante actualización de nuestras técnicas de diagnóstico y tratamiento.
+        </p>
+      </article>
 
+      <!-- trabajo -->
+      <article class="bloque-equipo mb-5">
+        <h2 class="titulo-seccion">Nuestro Equipo Humano</h2>
+        <p class="texto-parrafo">
+          Para garantizar una atención multidisciplinaria y oportuna, nuestra clínica cuenta con un equipo profesional compuesto por:
+        </p>
+        <ul class="lista-equipo">
+          <li><strong>3 Médicos Veterinarios:</strong> Especialistas en consultas generales, medicina preventiva, vacunación y cirugías.</li>
+          <li><strong>1 Técnico Veterinario:</strong> Encargado de los procedimientos de laboratorio, cuidados de enfermería y asistencia quirúrgica.</li>
+          <li><strong>1 Recepcionista Administrativa:</strong> Dedicada a la atención al cliente, agendamiento de horas y gestión de fichas clínicas.</li>
+        </ul>
+      </article>
 
-</main>
+      <!-- mision/vision -->
+      <section class="bloque-valores row gap-4 justify-content-center">
+        <article class="col-md-5 tarjeta-mision">
+          <h3 class="titulo-subseccion">Misión</h3>
+          <p class="texto-parrafo">
+            Proporcionar servicios veterinarios integrales orientados a la prevención, diagnóstico oportuno y tratamiento efectivo de enfermedades en mascotas de Rancagua, promoviendo de manera permanente la tenencia responsable.
+          </p>
+        </article>
 
-    <!--footer-->
-    <footer class="text-white text-center p-3 mt-auto" style="background-color: #000000;">
+        <article class="col-md-5 tarjeta-vision">
+          <h3 class="titulo-subseccion">Visión</h3>
+          <p class="texto-parrafo">
+            Ser la clínica veterinaria referente en la Región de O'Higgins, destacando por la excelencia médica de nuestro personal, el trato humano cálido y la confianza depositada por nuestros clientes.
+          </p>
+        </article>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- footer-->
+  <footer class="text-white text-center p-3 mt-auto" style="background-color: #000000;">
     <p class="mb-0">&copy; 2026 Veterinaria San Marcos. Todos los derechos reservados.</p>
   </footer>
 
-    </div>
-
-
-
-     <!--boostrap link-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- link de boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
