@@ -1,0 +1,184 @@
+/* al final hice solo 1 porque era mas facil poner un coso de titulo-principal para todos los titulos principales en vez de hacer muchos css ONO.*/
+
+
+body {
+  font-family: system-ui, "Segoe UI", Arial, sans-serif;
+  color: #262626;
+}
+
+
+
+
+
+/* Los textos y títulos */
+.titulo-principal {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.subtitulo-nosotros {
+  color: #6c6c6c;
+}
+
+.titulo-seccion {
+  color: #1a1a1a;
+  font-weight: 600;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.titulo-subseccion {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.texto-parrafo {
+  color: #444;
+  line-height: 1.6;
+}
+
+.texto-categoria {
+  color: #888;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+/* Misión y vision */
+.bloque-mision-vision {
+  border-top: 1px solid #dcdcdc;
+  padding-top: 25px;
+}
+
+
+
+
+/* Tarjetitas de servicios y novedades */
+.tarjeta-item {
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+}
+
+.tarjeta-item img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta-item .cuerpo-tarjeta {
+  padding: 15px;
+}
+
+.precio-servicio {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+
+
+
+/* Botoncitos de los filtros en servicio */
+.filtro-categoria {
+  color: #555;
+  text-decoration: none;
+  margin-right: 18px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+
+.filtro-categoria:hover {
+  color: var(--bs-primary);
+}
+
+.filtro-categoria.filtro-activo {
+  color: var(--bs-primary);
+  border-bottom: 2px solid var(--bs-primary);
+  font-weight: 600;
+}
+
+
+
+
+
+/* Panel de administración que tiene aura de hombre de negocios importante*/
+/* El important lo descubri recien y es para que use los colores que ppuse aca y no arriba...*/
+.navbar-admin {
+  background-color: #1f1f1f !important;
+}
+
+.navbar-admin .nav-link {
+  color: #e6e6e6 !important;
+}
+
+.navbar-admin .navbar-brand {
+  color: #ffffff !important;
+}
+
+
+
+
+
+
+/*gangster footera criminalera*/
+.footer-vsm {
+  background-color: #1a1a1a;
+  color: #cfcfcf;
+  border-top: 3px solid var(--bs-primary);
+}
+
+.footer-vsm h6 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.footer-vsm p,
+.footer-vsm a {
+  color: #b8b8b8;
+  font-size: 0.9rem;
+}
+
+.footer-vsm a {
+  text-decoration: none;
+}
+
+.footer-vsm a:hover {
+  color: #fff;
+}
+
+.footer-vsm .copyright {
+  border-top: 1px solid #333;
+  margin-top: 15px;
+  padding-top: 15px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+
+
+/* Mensajes de validación de formularios */
+.mensaje-error {
+  color: #b02a37;
+  font-size: 0.9rem;
+}
+
+.mensaje-ok {
+  color: #1a7a4c;
+  font-weight: 600;
+}
