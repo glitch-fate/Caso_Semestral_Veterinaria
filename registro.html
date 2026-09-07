@@ -76,78 +76,81 @@
 
 <!-------------------------------------------------------------------------->
     <section class="container my-5">
-        <h1 class="titulo-principal mb-4">
-            Crear cuenta
-        </h1>
+  <h1 class="titulo-principal mb-4">
+    Crear cuenta
+  </h1>
 
-        <form id="form-registro" class="col-md-7" onsubmit="validarRegistro(event)" novalidate>
-            <div class="mb-3">
-                <label for="run" class="form-label">
-                    RUN (sin puntos ni guion, ej: 12345678K)
-                </label>
-                <input type="text" class="form-control" id="run" maxlength="10">
-            </div>
+  <form id="form-registro" class="col-md-7" onsubmit="validarRegistro(event)" novalidate>
+    
+    <div class="mb-3">
+      <label for="run" class="form-label">
+        RUN (sin puntos ni guion)
+      </label>
+      <input type="text" class="form-control" id="run" maxlength="10" placeholder="Ej: 12345678K">
+    </div>
 
-            <div class="mb-3">
-                <label for="nombre" class="form-label">
-                    Nombre
-                </label>
-                <input type="text" class="form-control" id="nombre" maxlength="50">
-            </div>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">
+        Nombre
+      </label>
+      <input type="text" class="form-control" id="nombre" maxlength="50" placeholder="Ej: Juan">
+    </div>
 
-            <div class="mb-3">
-                <label for="apellidos" class="form-label">
-                    Apellidos
-                </label>
-                <input type="text" class="form-control" id="apellidos" maxlength="100">
-            </div>
+    <div class="mb-3">
+      <label for="apellidos" class="form-label">
+        Apellidos
+      </label>
+      <input type="text" class="form-control" id="apellidos" maxlength="100" placeholder="Ej: Pérez González">
+    </div>
 
-            <div class="mb-3">
-                <label for="correo" class="form-label">
-                    Correo electrónico
-                </label>
-                <input type="text" class="form-control" id="correo" maxlength="100">
-            </div>
+    <div class="mb-3">
+      <label for="correo" class="form-label">
+        Correo electrónico
+      </label>
+      <input type="text" class="form-control" id="correo" maxlength="100" placeholder="ejemplo@correo.cl">
+    </div>
 
-            <div class="mb-3">
-                <label for="fechaNacimiento" class="form-label">
-                    Fecha de nacimiento (opcional)
-                </label>
-                <input type="date" class="form-control" id="fechaNacimiento">
-            </div>
+    <div class="mb-3">
+      <label for="fechaNacimiento" class="form-label">
+        Fecha de nacimiento (opcional)
+      </label>
+      <input type="date" class="form-control" id="fechaNacimiento">
+    </div>
 
-            <div class="mb-3">
-            <label for="tipoUsuario" class="form-label">
-                Tipo de usuario
-            </label>
-                <select class="form-select" id="tipoUsuario">
-                    <option value="">
-                        Selecciona una opción
-                    </option>
-                    <option value="Cliente">
-                        Dueño de mascota
-                    </option>
-                    <option value="Recepcionista">
-                        Recepcionista
-                    </option>
-                    <option value="Administrador">
-                        Administrador
-                    </option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="direccion" class="form-label">
-                    Dirección
-                </label>
-                <input type="text" class="form-control" id="direccion" maxlength="300">
-            </div>
+    <div class="mb-3">
+      <label for="tipoUsuario" class="form-label">
+        Tipo de usuario
+      </label>
+      <select class="form-select" id="tipoUsuario">
+        <option value="" selected disabled hidden>
+          Selecciona tu rol en el sistema
+        </option>
+        <option value="Cliente">
+          Dueño de mascota
+        </option>
+        <option value="Recepcionista">
+          Recepcionista
+        </option>
+        <option value="Administrador">
+          Administrador
+        </option>
+      </select>
+    </div>
 
-            <p id="mensaje-registro"></p>
-            <button type="submit" class="btn btn-primary">
-                Registrarme
-            </button>
-        </form>
-    </section>
+    <div class="mb-3">
+      <label for="direccion" class="form-label">
+        Dirección
+      </label>
+      <input type="text" class="form-control" id="direccion" maxlength="300" placeholder="Ej: Av. Brasil 123, Rancagua">
+    </div>
+
+    <p id="mensaje-registro"></p>
+    
+    <button type="submit" class="btn btn-primary">
+      Registrarse
+    </button>
+  </form>
+</section>
   </main>
 
 <!-------------------------------------------------------------------------->
@@ -161,5 +164,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="usuarios-validaciones.js"></script>
   <script src="registro.js"></script>
+
+  <script src="main.js"></script>
 </body>
 </html>

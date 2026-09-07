@@ -63,13 +63,20 @@
             <li class="nav-item">
               <a class="nav-link active fw-bold" href="reservas.html">Reservas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registro.html">Registro</a>
-            </li>
-          </ul>    
+         
+          </ul>   
+          <!-- Botones de usuario alineados a la derecha -->
+      <div class="d-flex gap-2 mt-2 mt-lg-0">
+        <!-- Botón Login: Contorno azul -->
+        <a href="login.html" class="btn btn-outline-primary btn-sm fw-bold px-3">
+          Login
+        </a>
+        
+        <!-- Botón Registro: Fondo azul sólido -->
+        <a href="registro.html" class="btn btn-primary btn-sm fw-bold px-3">
+          Registro
+        </a>
+      </div> 
         </div>
       </div>
     </nav>
@@ -97,5 +104,7 @@
   <script src="servicios.js"></script> <!-- todavia no se pq no funciona si estan al reves aca.-->
   <script src="seleccion.js"></script> <!-- este es para lo de agregar y quitar cosas a la lista de reservas ok -->
   <script>mostrarSeleccion();</script>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--  CSS -->
+  <link rel="stylesheet" href="style_nos.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Novedades - Veterinaria San Marcos</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  
+  <main class="flex-grow-1">
+    
+    <!-- TOPBAR -->
+    <div class="bg-dark text-white py-2 border-bottom border-secondary">
+      <div class="container-fluid px-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 gap-md-3">
+          
+          <!-- Logo -->
+          <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+            <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" alt="Logo San Marcos" height="32" class="me-2">
+            <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos</span>
+          </a>
+
+          <!-- Información de contacto rápida -->
+          <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 fs-6 text-light">
+            <span><strong>Urgencias:</strong> +56 9 8765 4321</span>
+            <span class="text-muted d-none d-sm-inline">|</span>
+            <span><strong>Ubicación:</strong> Rancagua, O'Higgins.</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">Inicio</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Menú principal -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="novedades.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservas.html">Reservas</a>
+            </li>
+          </ul>
+
+          <!-- botones log -->
+          <div class="d-flex gap-2 mt-2 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-primary btn-sm fw-bold px-3">Login</a>
+            <a href="registro.html" class="btn btn-primary btn-sm fw-bold px-3">Registro</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- novedades section -->
+    <section class="container my-5">
+      
+      <!-- head-->
+      <header class="text-center mb-5">
+        <h1 class="titulo-principal fw-bold text-primary">Noticias y Consejos de Salud</h1>
+        <p class="text-secondary fs-5">Mantente informado sobre eventos, campañas de vacunación y recomendaciones para el bienestar de tus mascotas.</p>
+      </header>
+
+      <!-- destacado herocard boostrap -->
+      <article class="card border-0 shadow-sm mb-5 bg-light overflow-hidden">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6">
+            <!--recordar cambiar la fotito -->
+            <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" class="img-fluid w-100 p-4" alt="Campaña de Vacunación" style="max-height: 350px; object-fit: contain;">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body p-4">
+              <span class="badge bg-danger mb-2">Comunicado Oficial</span>
+              <h2 class="card-title fw-bold text-dark">Campaña Anual de Vacunación Antirrábica en Rancagua</h2>
+              <p class="card-text text-secondary mt-3">
+                Durante todo este mes, nuestro equipo médico estará realizando jornadas especiales de inmunización y chequeo general preventivo para caninos y felinos de la región.
+              </p>
+              <p class="card-text"><small class="text-muted">Publicado el 5 de Septiembre, 2026</small></p>
+              <a href="detalle-noticia.html#campana-vacunacion" class="btn btn-primary btn-sm mt-2 fw-bold" target="_blank">Leer noticia completa</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!--card responsive de boostrap -->
+      <h3 class="fw-bold text-dark mb-4 border-bottom pb-2">Artículos Educativos y Avisos</h3>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Noticia 1 -->
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">Cuidados</span>
+              <h4 class="card-title h5 fw-bold">Cómo prevenir los golpes de calor en perros</h4>
+              <p class="card-text text-secondary fs-6">
+                Consejos prácticos de nuestros médicos veterinarios para proteger a tus mascotas durante las altas temperaturas.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <small class="text-muted d-block mb-2">Por: Dr. Equipo San Marcos</small>
+              <a href="detalle-noticia.html#golpes-de-calor" class="btn btn-outline-primary btn-sm w-100 fw-bold" target="_blank">Ver artículo</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Salud Dental</span>
+              <h4 class="card-title h5 fw-bold">La importancia de la profilaxis en felinos</h4>
+              <p class="card-text text-secondary fs-6">
+                Descubre cómo la higiene bucal previene enfermedades renales y cardíacas en gatos adultos.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <small class="text-muted d-block mb-2">Por: Equipo Técnico</small>
+              <a href="detalle-noticia.html#profilaxis-felina" class="btn btn-outline-primary btn-sm w-100 fw-bold" target="_blank">Ver artículo</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Tenencia Responsable</span>
+              <h4 class="card-title h5 fw-bold">Mitos y realidades sobre la esterilización</h4>
+              <p class="card-text text-secondary fs-6">
+                Aclaramos las dudas más comunes antes de agendar la cirugía de tu mascota en nuestro centro.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <small class="text-muted d-block mb-2">Por: Dra. Equipo San Marcos</small>
+              <a href="detalle-noticia.html#mitos-esterilizacion" class="btn btn-outline-primary btn-sm w-100 fw-bold" target="_blank">Ver artículo</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center p-3 mt-auto" style="background-color: #000000;">
+    <p class="mb-0">&copy; 2026 Veterinaria San Marcos. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
