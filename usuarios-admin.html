@@ -5,30 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CDN de Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Tu CSS personalizado -->
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="style_nos.css">
   <link rel="stylesheet" href="style.css">
-  <title>Administracion servicios - Veterinaria San Marcos</title>
+  <title>Mantenedor de Usuarios - Veterinaria San Marcos</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
   
   <main class="flex-grow-1">
     
-    <!-- topbar-->
+    <!-- Topbar Identificadora -->
     <div class="bg-dark text-white py-2 border-bottom border-secondary">
       <div class="container-fluid px-4">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 gap-md-3">
           
-          <!-- logo e identidad -->
-          <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+          <!-- Logo e Identidad -->
+          <a href="index-admin.html" class="d-flex align-items-center text-decoration-none text-white">
             <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" alt="Logo San Marcos" height="32" class="me-2">
-            <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos</span>
+            <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos | Panel Admin</span>
           </a>
 
-          <!-- infor de contacto-->
+          <!-- Información del sistema -->
           <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 fs-6 text-light">
-            <span><strong>Urgencias:</strong> +56 9 8765 4321</span>
+            <span class="badge bg-danger text-uppercase">Modo Administrador</span>
             <span class="text-muted d-none d-sm-inline">|</span>
             <span><strong>Ubicación:</strong> Rancagua, O'Higgins.</span>
           </div>
@@ -37,121 +37,132 @@
       </div>
     </div>
 
-    <!-- navbar de boostrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <!-- Navbar exclusivo de Administración -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm border-bottom border-secondary">
       <div class="container-fluid px-4">
-        <a class="navbar-brand fw-bold text-primary" href="index.html">Inicio</a>
         
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold text-danger d-flex align-items-center gap-2" href="index-admin.html">
+          <span></span> Admin Panel
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAdmin" aria-controls="navbarNavAdmin" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNavAdmin">
+          
+          <!-- Opciones de navegación administrativa -->
           <ul class="navbar-nav me-auto">
+            
             <li class="nav-item">
-              <a class="nav-link" href="index-admin.html">Inicio admin</a>
+              <a class="nav-link" href="servicios-admin.html">Mantenedor de Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicios-admin.html">Mantenedor de servicios</a>
+              <a class="nav-link active fw-bold" href="usuarios-admin.html">Mantenedor de Usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold"" href="usuarios-admin.html">Mantenedor de usuarios</a>
+              <a class="nav-link" href="reservas-admin.html">Gestión de Reservas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Ver sitio publico! :c</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="novedades.html">Novedades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contactos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reservas.html">Reservas</a>
-            </li>
-          </ul>    
+          </ul>
+
+          <!-- Único botón a la derecha -->
+          <div class="d-flex gap-2 mt-2 mt-lg-0 align-items-center">
+            <a href="index.html" class="btn btn-outline-light btn-sm fw-bold px-3 d-flex align-items-center gap-2">
+              <span></span> Ver Sitio Público
+            </a>
+          </div>
+
         </div>
       </div>
     </nav>
 
-<!-------------------------------------------------------------------------->
-
+    <!-- Contenido del Mantenedor -->
     <section class="container my-5">
-      <h1 class="titulo-principal mb-4">
-        Mantenedor de Usuarios
-    </h1>
+      <h1 class="titulo-principal mb-4">Mantenedor de Usuarios</h1>
 
-    <table class="table table-bordered bg-white">
-        <thead class="table-light">
+      <!-- Tabla de Usuarios registrados -->
+      <div class="table-responsive shadow-sm rounded mb-5">
+        <table class="table table-bordered table-hover bg-white mb-0">
+          <thead class="table-dark">
             <tr>
-                <th>RUN</th>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Tipo</th>
-                <th>Acción</th>
+              <th>RUN</th>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Tipo</th>
+              <th class="text-center">Acción</th>
             </tr>
-        </thead>
-        <tbody id="cuerpo-tabla-usuarios"></tbody>
-    </table>
+          </thead>
+          <tbody id="cuerpo-tabla-usuarios"></tbody>
+        </table>
+      </div>
 
-    <h2 class="titulo-seccion mt-5">
-        Crear / editar usuario
-    </h2>
-      <form id="form-usuario" class="col-md-6" onsubmit="guardarUsuario(event)">
+      <!-- Formulario para Crear / Editar Usuario -->
+      <div class="card shadow-sm col-md-8 col-lg-6">
+        <div class="card-header bg-light">
+          <h2 class="h5 mb-0 fw-bold text-secondary">Crear / Editar Usuario</h2>
+        </div>
+        <div class="card-body">
+          <form id="form-usuario" onsubmit="guardarUsuario(event)">
             <input type="hidden" id="edit-indice">
+            
             <div class="mb-3">
-            <label for="edit-run" class="form-label">RUN (sin puntos ni guion)</label>
-            <input type="text" class="form-control" id="edit-run" maxlength="10">
+              <label for="edit-run" class="form-label fw-bold">RUN (sin puntos ni guion)</label>
+              <input type="text" class="form-control" id="edit-run" maxlength="10" required>
             </div>
+            
             <div class="mb-3">
-            <label for="edit-nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="edit-nombre" maxlength="50">
+              <label for="edit-nombre" class="form-label fw-bold">Nombre</label>
+              <input type="text" class="form-control" id="edit-nombre" maxlength="50" required>
             </div>
+            
             <div class="mb-3">
-            <label for="edit-apellidos" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="edit-apellidos" maxlength="100">
+              <label for="edit-apellidos" class="form-label fw-bold">Apellidos</label>
+              <input type="text" class="form-control" id="edit-apellidos" maxlength="100" required>
             </div>
+            
             <div class="mb-3">
-            <label for="edit-correo" class="form-label">Correo electrónico</label>
-            <input type="text" class="form-control" id="edit-correo" maxlength="100">
+              <label for="edit-correo" class="form-label fw-bold">Correo electrónico</label>
+              <input type="email" class="form-control" id="edit-correo" maxlength="100" required>
             </div>
+            
             <div class="mb-3">
-            <label for="edit-tipo" class="form-label">Tipo de usuario</label>
-            <select class="form-select" id="edit-tipo">
+              <label for="edit-tipo" class="form-label fw-bold">Tipo de usuario</label>
+              <select class="form-select" id="edit-tipo" required>
                 <option value="">Selecciona una opción</option>
                 <option value="Administrador">Administrador</option>
                 <option value="Recepcionista">Recepcionista</option>
                 <option value="Cliente">Cliente</option>
-            </select>
+              </select>
+            </div>
+            
+            <p id="mensaje-admin-usuarios" class="fw-bold"></p>
+            
+            <button type="submit" class="btn btn-primary fw-bold">
+              Guardar usuario
+            </button>
+          </form>
         </div>
-        <p id="mensaje-admin-usuarios"></p>
-        <button type="submit" class="btn btn-primary">Guardar usuario</button>
-      </form>
+      </div>
     </section>
-
-    <!-- Moby dic librazo -->
-
 
   </main>
 
-<!-------------------------------------------------------------------------->
-
-  <!-- footer-->
+  <!-- Footer -->
   <footer class="text-white text-center p-3 mt-auto" style="background-color: #000000;">
     <p class="mb-0">&copy; 2026 Veterinaria San Marcos. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- link de boostrap-->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="admin.js"></script>
   <script src="usuarios-validaciones.js"></script>
   <script src="usuarios-admin.js"></script>
-  <script>mostrarTablaUsuarios()</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof mostrarTablaUsuarios === "function") {
+        mostrarTablaUsuarios();
+      }
+    });
+  </script>
 </body>
 </html>

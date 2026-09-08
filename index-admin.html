@@ -5,30 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CDN de Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Tu CSS personalizado -->
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="style_nos.css">
   <link rel="stylesheet" href="style.css">
-  <title>Administracion - Veterinaria San Marcos</title>
+  <title>Panel de Administración - Veterinaria San Marcos</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
   
   <main class="flex-grow-1">
     
-    <!-- topbar-->
+    <!-- Topbar Identificadora -->
     <div class="bg-dark text-white py-2 border-bottom border-secondary">
       <div class="container-fluid px-4">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 gap-md-3">
           
-          <!-- logo e identidad -->
-          <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+          <!-- Logo e Identidad -->
+          <a href="index-admin.html" class="d-flex align-items-center text-decoration-none text-white">
             <img src="images/index/Stylized Logo with Dog and Cat Silhouette.png" alt="Logo San Marcos" height="32" class="me-2">
-            <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos</span>
+            <span class="fw-bold fs-6 text-uppercase tracking-wide">Veterinaria San Marcos | Panel Admin</span>
           </a>
 
-          <!-- infor de contacto-->
+          <!-- Información del sistema -->
           <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 fs-6 text-light">
-            <span><strong>Urgencias:</strong> +56 9 8765 4321</span>
+            <span class="badge bg-danger text-uppercase">Modo Administrador</span>
             <span class="text-muted d-none d-sm-inline">|</span>
             <span><strong>Ubicación:</strong> Rancagua, O'Higgins.</span>
           </div>
@@ -37,69 +37,94 @@
       </div>
     </div>
 
-    <!-- navbar de boostrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <!-- Navbar exclusivo de Administración -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm border-bottom border-secondary">
       <div class="container-fluid px-4">
-        <a class="navbar-brand fw-bold text-primary" href="index.html">Inicio</a>
         
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold text-danger" href="index-admin.html">Admin Panel</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAdmin" aria-controls="navbarNavAdmin" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNavAdmin">
+          
+          <!-- Opciones exclusivas de Administración -->
           <ul class="navbar-nav me-auto">
+           
             <li class="nav-item">
-              <a class="nav-link active fw-bold" href="index-admin.html">Inicio admin</a>
+              <a class="nav-link" href="servicios-admin.html">Mantenedor de Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicios-admin.html">Mantenedor de servicios</a>
+              <a class="nav-link" href="usuarios-admin.html">Mantenedor de Usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="usuarios-admin.html">Mantenedor de usuarios</a>
+              <a class="nav-link" href="reservas-admin.html">Gestión de Reservas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Ver sitio publico! :c</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="novedades.html">Novedades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contactos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reservas.html">Reservas</a>
-            </li>
-          </ul>    
+          </ul>
+
+          <!-- Enlace al sitio público -->
+          <div class="d-flex gap-2 mt-2 mt-lg-0 align-items-center">
+            <a href="index.html" class="btn btn-outline-light btn-sm fw-bold px-3">
+              Ver Sitio Público
+            </a>
+          </div>
+
         </div>
       </div>
     </nav>
 
-<!-------------------------------------------------------------------------->
-
+    <!-- Sección principal del Dashboard -->
     <section class="container my-5">
-      <h1> NO SE QUE PONER AQUI</h1>
+      <div class="p-4 mb-4 bg-body-tertiary rounded-3 border">
+        <h1 class="fw-bold">Bienvenido al Panel de Control</h1>
+        <p class="lead mb-0">Desde aquí puedes gestionar los servicios, usuarios y las reservas médicas de la veterinaria.</p>
+      </div>
+
+      <!-- Tarjetas de acceso rápido -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Gestión de Servicios</h5>
+              <p class="card-text text-muted">Añade, edita o elimina servicios veterinarios disponibles.</p>
+              <a href="servicios-admin.html" class="btn btn-primary btn-sm fw-bold">Ir a Servicios</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Gestión de Usuarios</h5>
+              <p class="card-text text-muted">Administra los roles, clientes y personal registrado.</p>
+              <a href="usuarios-admin.html" class="btn btn-primary btn-sm fw-bold">Ir a Usuarios</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Gestión de Reservas</h5>
+              <p class="card-text text-muted">Revisa las horas agendadas y gestiona los estados de atención.</p>
+              <a href="reservas-admin.html" class="btn btn-primary btn-sm fw-bold">Ir a Reservas</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <!-- hola que tal! !!! !! ! !   -->
-
 
   </main>
 
-<!-------------------------------------------------------------------------->
-
-  <!-- footer-->
+  <!-- Footer -->
   <footer class="text-white text-center p-3 mt-auto" style="background-color: #000000;">
     <p class="mb-0">&copy; 2026 Veterinaria San Marcos. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- link de boostrap-->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
   <script src="admin.js"></script>
 </body>
 </html>
