@@ -60,7 +60,7 @@ function mostrarSeleccion() {
     let total = 0;
 
     idsSeleccionados.forEach(function (id) {
-        const servicio = servicios.find(function (s) { return s.id === id; });
+        const servicio = serviciosIniciales.find(function (s) { return s.id === id; });
         if (!servicio) return;
 
         total += servicio.precio;
