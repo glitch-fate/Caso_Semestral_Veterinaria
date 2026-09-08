@@ -4,7 +4,7 @@ function mostrarDetalleServicio() {
   const parametros = new URLSearchParams(window.location.search);
   const id = parametros.get("id");
 
-  const servicio = servicios.find(function (s) { return s.id === id; });
+  const servicio = serviciosIniciales.find(function (s) { return s.id === id; });
   const contenedor = document.getElementById("detalle-servicio");
   if (!contenedor) return;
 
