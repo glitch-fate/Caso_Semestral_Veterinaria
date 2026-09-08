@@ -1,4 +1,4 @@
-const servicios = [
+const serviciosIniciales = [
   // Consultas
   { id: "SV001", 
     categoria: "Consultas", 
@@ -267,6 +267,7 @@ function manejarErrorImagen(imgElemento) {
     imgElemento.src = "perrito1.jpg";
 }
 
+//servicio es diferente de servicios (serviciosIniciales)
 // espauneador masivo
 function pintarServicios(listaServicios, idContenedor) {
     const contenedor = document.getElementById(idContenedor);
@@ -296,7 +297,7 @@ function pintarServicios(listaServicios, idContenedor) {
 }
 
 function mostrarCatalogo() {
-    pintarServicios(servicios, "lista-servicios");
+    pintarServicios(serviciosIniciales, "lista-servicios");
 }
 
 function mostrarDestacados(cantidad) {
@@ -305,8 +306,8 @@ function mostrarDestacados(cantidad) {
 
 function filtrarPorCategoria(categoria) {
     const listaFiltrada = categoria === "Todos"
-        ? servicios
-        : servicios.filter(function (s) { return s.categoria === categoria; });
+        ? serviciosIniciales
+        : serviciosIniciales.filter(function (s) { return s.categoria === categoria; });
 
     pintarServicios(listaFiltrada, "lista-servicios");
 
