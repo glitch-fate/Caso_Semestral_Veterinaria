@@ -35,7 +35,7 @@ function validarLogin(evento) {
 
         // Redirección (opcional)
         setTimeout(() => {
-            window.location.href = "index.html"; 
+            window.location.href = "index-admin.html"; 
         }, 1500);
 
     } else if (correo === usuarioCliente.correo && clave === usuarioCliente.clave) {
