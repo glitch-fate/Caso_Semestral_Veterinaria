@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // --- RENDERIZAR BOTÓN SITIO PÚBLICO + USUARIO + CERRAR SESIÓN ---
+    // --- BOTÓN SITIO PÚBLICO + USUARIO + CERRAR SESIÓN ---
     contenedorBotones.innerHTML = `
       <a href="index.html" class="btn btn-outline-light btn-sm fw-bold px-3 d-flex align-items-center gap-1">
         <span></span> Ver Sitio Público
